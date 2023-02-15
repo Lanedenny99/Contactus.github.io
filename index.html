@@ -10,16 +10,17 @@
 		<form class="contact" method="post" action="">
 			<h1>Contact Form</h1>
 			<div class="fields">
-				<label for="email">
+				<div id="email"><label for="email">
 					<i class="fas fa-envelope"></i>
 					<input id="email" type="email" name="email" placeholder="Your Email" required>
-				</label>
-				<label for="name">
+				</label></div>
+				<div id="Name">	<label for="name">
 					<i class="fas fa-user"></i>
-					<input type="text" name="name" placeholder="Your Name" required>
-				<label>
-				<input type="text" name="subject" placeholder="Subject" required>
-				<textarea name="msg" placeholder="Message" required></textarea>
+					<input type="text" name="name" placeholder="Your Name" required></div>
+			<div id="subject"><label>
+				<input type="text" name="subject" placeholder="Subject" required></div>
+				<div id="Message"><textarea name="msg" placeholder="Message" required></textarea></div>
+				
 			</div>
 			<input type="submit">
 		</form>
