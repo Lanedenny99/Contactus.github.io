@@ -2,7 +2,7 @@ function sendMail() {
     Email.send({
         Host : "smtp.gmail.com",
         Username : "lanedenny99@gmail.com",
-        Password : "password",
+        Password : "8875587C42ED456E6A27432634A21D377056",
         To : 'lanedenny99@gmail.com',
         From : document.getElementById("email").value,
         Subject : "New contact us for pig dice",
