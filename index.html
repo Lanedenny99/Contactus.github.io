@@ -11,17 +11,28 @@
 </head>
 
 <body>
-	<form class="contact" method="post" action="">
-		<h1>Contact Form</h1>
-		<div class="mb-3">
-			<label for="formGroupExampleInput" class="form-label">Email</label>
-			<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder" required>
+	<form method="POST" class="contact" method="post" action="" onsubmit="sendMail(); reset(); false">
+		<h1>Contact Pig Dice Form</h1>
+		<div class="container-sm"><img src="pig.png" alt=""></div>
+		<div class="container-sm">
+			<label for="formGroupExampleInput" class="form-label">Name</label>
+			<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name" required>
 		  </div>
-		  <div class="mb-3">
-			<label for="exampleFormControlTextarea1" class="form-label">Question or Comment</label>
-			<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+		<div class="container-sm">
+			<label for="formGroupExampleInput" class="form-label">Email</label>
+			<input type="text" class="form-control" id="email" placeholder="Email" required>
+		  </div>
+		  <div class="container-sm">
+			<label for="exampleFormControlTextarea1" class="form-label">Message</label>
+			<textarea class="form-control" id="message" rows="3" placeholder="Message"></textarea>
+		  </div>
+		  <div class="container-sm">
+			<input type="button" value="Submit">
 		  </div>
 	</form>
+
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+	<script src="scripts.js"></script>
 </body>
 
 </html>
